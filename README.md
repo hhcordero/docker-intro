@@ -13,8 +13,8 @@ Using docker-compose:
 
 Without a Dockerfile:
 
-    docker run --name my-app -v $(pwd)/src:/usr/share/nginx/html -d hhcordero/docker-intro
+    docker run --name my-app -p 80:80 -v $(pwd)/src:/usr/share/nginx/html -d hhcordero/docker-intro
 
 Read-only mount:
 
-    docker run --name my-app -v $(pwd)/src:/usr/share/nginx/html:ro -d hhcordero/docker-intro
+    docker run --name my-app -p 80:80 -v $(pwd)/src:/usr/share/nginx/html:ro -d hhcordero/docker-intro
