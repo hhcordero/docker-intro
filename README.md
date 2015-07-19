@@ -5,7 +5,7 @@ Brief introduction on Docker
 To run using Dockerfile: 
 
     docker build -t web .
-    docker run -it --rm --name my-app web
+    docker run -it --rm --name my-app -p 80:80 web
 
 Using docker-compose:
 
